@@ -1,0 +1,155 @@
+<header class="fixed-header">
+        <img src="../Imagenes/Donde Jose-PhotoRoom.png-PhotoRoom.png" alt="logo" class="logo">
+        <a href=""> <img src="../Imagenes/Logo registro.png" alt="logoRegistro" class="logoRegistro"></a>
+    </header>
+    <header class="normal-header">
+            <a href="./Index.html" class="nav-link">Inicio</a>
+            <div class="dropdown">
+                <a href="./Catalogos.html" class="nav-link dropdown-link">Catalogos</a>
+                
+            </div>
+            <a href="../Page/Contactenos.html" class="nav-link">Contactenos</a>
+        </nav>
+    </header>
+
+
+
+    <footer>
+        <div class="contenedorTotalFooter">
+            <div class="contenedorFooter">
+                <div class="columna1">
+                    <img src="../Imagenes/Donde Jose-PhotoRoom.png-PhotoRoom.png">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Viernes
+                        8 am a 7 pm</p>
+                    <p>Sabado y Domingo
+                        9 am a 7 pm</p>
+                </div>
+
+                <div class="columna2">
+                    <div class="contenido">
+                        <h3>Contactenos</h3>
+                        <img src="../Imagenes/instagram.png">
+                        <label>@sangriasdondejose_ibg</label><br>
+                        <img src="../Imagenes/whatsapp (1).png">
+                        <label>+57 317-507-5148</label><br>
+                        <img src="../Imagenes/correo-electronico.png">
+                        <label>sangriasdondejose_11@gmail.com</label>
+                    </div>
+                </div>
+                <div class="columna3">
+                    <h3>Mensaje Clientes</h3>
+                    <p>En Sangrias Donde Jose Amamos hacer parte de tus mejores momentos, por eso tenemos para ti
+                        detalles
+                        para hacer de cualquier ocasion la mas especial.
+                        No dudes en hacer tu pedido ahora mismo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerFooter2">
+            <div class="piedepagina">
+                @ 2023 Todos los Derechos Reservados
+            </div>
+            <div class="terminos">
+                Informacion Compañia | Privacion y Politica |Terminos y Condiciones.
+            </div>
+        </div>
+    </footer>
+                    <img src="../Imagenes/Logo registro.png">
+
+
+                    .gallery h3{
+                        text-align: center;
+                        font-size: 30px;
+                        margin: 0;
+                        padding-top: 10px;
+                    }
+                    
+                    .gallery a{
+                        text-decoration: none;
+                    }
+                    
+                    
+                    
+                    
+                    
+                    <div class="slider">
+                        <ul>
+                            <li><img src="../Imagenes/Slider/horizontal.jpeg"></li>
+                            <li><img src="../Imagenes/Slider/Horizontal1.jpeg"></li>
+                            <li><img src="../Imagenes/Slider/Horizontal2.jpeg"></li>
+                            <li><img src="../Imagenes/Slider/horizontal3.jpeg"></li>
+                        </ul>
+                    </div>
+
+                    /*slider*/
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: automatico 15s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 250px;
+    margin-left: 100px;
+
+
+}
+
+@media(min-width: 768px) {
+    .slider img {
+        height: 450px;
+        width: 1000px;
+    }
+}
+
+@keyframes automatico {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+                    
+                    
+                    

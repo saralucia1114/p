@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+
+                <div class="container-logo">
+                    <img src="../Imagenes/Logos/Logopagina.png">
+                </div>
+
+                <div class="container-user">
+                    <section class="Carrito&Registro">
+        
+                        <button id="carrito-btn">
+                          <img src="../Imagenes/Logos/Logocarritodecompras.png" alt="Logo Carrito de Compras">
+                          <p class="text-car">(<span class="number" id="sumaCarrito" ></span>)</p>  
+                        </button>
+        
+                        <a href="../Page/registro.html">
+                            <img src="../Imagenes/Logos/Logoregistro.png" alt="Logo Registro">  
+                        </a>
+
+                        <div id="carrito" class="hidden">
+                            <button id="select_visualizador">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon_visualizar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="palevioletred" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4" />
+                                    <path d="M3 15l2.5 -3.8" />
+                                    <path d="M21 14.976l-2.492 -3.776" />
+                                    <path d="M9 17l.5 -4" />
+                                    <path d="M15 17l-.5 -4" />
+                                  </svg>
+
+                            </button><br>
+                           
+                        <div id="headCarrito">
+                            <h2>Carrito de Compras</h2>
+                            <img src="../Imagenes/Logos/Logocarritodecompras.png" alt="Logo Carrito de Compras" width="15" height="15">
+                        </div>
+                            <hr>
+                            <ul id="carrito-list">
+                                <!-- Aquí se mostrarán los productos seleccionados -->
+                            </ul>
+                            <hr>
+                            <p class="text-right">Total:<span id="total"></span></p>
+                            <hr><br>
+                            <button id="boton_vaciar"  class="btn btn-danger">Vaciar</button>
+                            <button id="boton_comprar"  class="btn btn-danger">Comprar</button>
+                        </div>
+                   </section>
+
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <ul class="menu">
+                    <li><a href="../Page/Index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="../Page/Catalogos.html">Catalogos</a></li>
+                    <li><a href="#">Más</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="tarjetasProductos">
+        <div class="card">
+            <div class="face front">
+                <img src="../Imagenes/Portadascatalogos/Catalogo sangrias.png" alt="">
+            </div>
+            <div class="face back">
+                <h3>Catálogo Principal</h3>
+                <p>Da click en ver más, allí encontraras nuestros combos principales, estos podras personalizarnos de acuerdo a la ocasión que necesites.
+                </p>
+                <div class="link">
+                    <a href="../Page/Fresas.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="../Imagenes/Portadascatalogos/Dia de la mujer.png" alt="">
+            </div>
+            <div class="face back">
+                <h3>Día de la Mujer</h3>
+                <p>Da click en ver más,allí encontraras nuestros combos diseñados para esa mujer especial en tu vida.</p>
+                <div class="link">
+                    <a href="../Page/MiniDonas.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="../Imagenes/Portadascatalogos/Dia del hombre.png" alt="">
+            </div>
+            <div class="face back">
+                <h3>Día del Hombre</h3>
+                <p>Da click en ver más,allí encontraras nuestros combos diseñados para que hagas sentir especial al hombre que desees.</p>
+                <div class="link">
+                    <a href="../Page/CakePops.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="../Imagenes/Portadascatalogos/Dia de la madre.png" alt="">
+               
+            </div>
+            <div class="face back">
+                <h3>Día de la Madre</h3>
+                <p>Da click en ver más,allí encontraras nuestros combos diseñados para que hagas sentir especial a esa persona tan importante en nuestras vidas que es Máma.</p>
+                <div class="link">
+                    <a href="../Page/CakePops.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="../Imagenes/Portadascatalogos/Dia del padre.png" alt="">
+                
+            </div>
+            <div class="face back">
+                <h3>Día del Padre</h3>
+                <p>Da click en ver más,allí encontraras nuestros combos diseñados para que hagas sentir especial a esa persona tan importante en nuestras vidas que es Papá.</p>
+                <div class="link">
+                    <a href="../Page/CakePops.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="../Imagenes/Portadascatalogos/Catálogo Amor y Amistad SDJ.png" alt="">
+                
+            </div>
+            <div class="face back">
+                <h3>Amor y Amistad</h3>
+                <p>Da click en ver más,allí encontraras nuestros combos diseñados para que hagas sentir especial a esa persona que tanto quieres.</p>
+                <div class="link">
+                    <a href="../Page/CakePops.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>

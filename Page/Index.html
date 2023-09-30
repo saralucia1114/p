@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+
+                <div class="container-logo">
+                    <img src="../Imagenes/Logos/Logopagina.png">
+                </div>
+
+                <div class="container-user">
+                    <section class="Carrito&Registro">
+        
+                        <button id="carrito-btn">
+                          <img src="../Imagenes/Logos/Logocarritodecompras.png" alt="Logo Carrito de Compras">
+                          <p class="text-car">(<span class="number" id="sumaCarrito" ></span>)</p>  
+                        </button>
+        
+                        <a href="../Page/registro.html">
+                            <img src="../Imagenes/Logos/Logoregistro.png" alt="Logo Registro">  
+                        </a>
+
+                        <div id="carrito" class="hidden">
+                            <button id="select_visualizador">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon_visualizar" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="palevioletred" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4" />
+                                    <path d="M3 15l2.5 -3.8" />
+                                    <path d="M21 14.976l-2.492 -3.776" />
+                                    <path d="M9 17l.5 -4" />
+                                    <path d="M15 17l-.5 -4" />
+                                  </svg>
+
+                            </button><br>
+                           
+                        <div id="headCarrito">
+                            <h2>Carrito de Compras</h2>
+                            <img src="../Imagenes/Logos/Logocarritodecompras.png" alt="Logo Carrito de Compras" width="15" height="15">
+                        </div>
+                            <hr>
+                            <ul id="carrito-list">
+                                <!-- Aquí se mostrarán los productos seleccionados -->
+                            </ul>
+                            <hr>
+                            <p class="text-right">Total:<span id="total"></span></p>
+                            <hr><br>
+                            <button id="boton_vaciar"  class="btn btn-danger">Vaciar</button>
+                            <button id="boton_comprar"  class="btn btn-danger">Comprar</button>
+                        </div>
+                   </section>
+
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <ul class="menu">
+                    <li><a href="../Page/Index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="../Page/Catalogos.html">Catalogos</a></li>
+                    <li><a href="../Page/Más.html">Más</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+    <div class="slider">
+        <ul>
+            <li> <img src="../Imagenes/Slider/slider1.2.jpg" alt=""></li>
+            <li> <img src="../Imagenes/Slider/slider1.1.jpg" alt=""></li>
+            <li> <img src="../Imagenes/Slider/slider1.3.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <img src="../Imagenes/Logos/Logoavion.png">
+                <div class="feature-content">
+                    <span>Envio Gratis</span>
+                    <p>Por compras superiores a $80.000</p>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <img src="../Imagenes/Logos/Logobilletera.png">
+                <div class="feature-content">
+                    <span>Medio de Pago</span>
+                    <p>100% Confiable</p>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <img src="../Imagenes/Logos/Logoregalo.png">
+                <div class="feature-content">
+                    <span>Tarjeta Regalo Especial</span>
+                    <p>Ofrece Bonos Especiales con Regalo</p>
+                </div>
+            </div>
+
+            <div class="card-feature">
+                <img src="../Imagenes/Logos/Logoaudifonos.png">
+                <div class="feature-content">
+                    <span>Servicio al Cliente</span>
+                    <p>Contactenos al 317-507-5148</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container top-categories">
+            <h1 class="heading-1">Catalogos Favoritos</h1>
+            <div class="container-categories">
+
+                <div class="card-category category-principal">
+                    <p>Principal</p>
+                    <span>Ver más</span>
+                </div>
+
+                <div class="card-category category-madre">
+                    <p>Dia de la Madre</p>
+                    <span>Ver más</span>
+                </div>
+
+                <div class="card-category category-padre">
+                    <p>Dia del Padre</p>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container top-products">
+            <h1 class="heading-1">Mejores Combos</h1>
+        
+            <div class="gallery">
+                <div class="content">
+                    <h1>Catalogo principal</h1>
+                    <img src="../Imagenes/Mejorescombos/Mejorescombos2.jpeg">
+                    <h2>Combo 8</h2>
+                    <h3>$62.000</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-4">Comprar</button>
+                </div>
+
+
+                <div class="content">
+                    <h1>Catalogo Día del Padre</h1>
+                    <img src="../Imagenes/Mejorescombos/Mejorescombos1.jpeg">
+                    <h2>Combo 5</h2>
+                    <h3>$73.000</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-4">Comprar</button>
+                </div>
+
+
+                <div class="content">
+                    <h1>Catalogo Principal</h1>
+                    <img src="../Imagenes/Mejorescombos/Mejorescombos3.jpeg">
+                    <h2>Combo 10</h3>
+                    <h3>$85.000</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-4">Comprar</button>
+                </div>
+
+
+                <div class="content">
+                    <h1>Catalogo Día de la Madre</h1>
+                    <img src="../Imagenes/Mejorescombos/Mejorescombos4.jpeg">
+                    <h2>Combo 13</h2>
+                    <h3>$100.000</h3>
+                    <ul>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <button class="buy-4">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedorTotalFooter">
+            <div class="contenedorFooter">
+                <div class="columna1">
+                    <img src="../Imagenes/Logos/Logopagina.png">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Viernes de 8 am a 7 pm</p>
+                    <p>Sabado y Domingo de 9 am a 7 pm</p>
+                </div>
+
+                <div class="columna2">
+                    <div class="contenido">
+                        <h3>Contactanos</h3>
+                        <img src="../Imagenes/Logos/Logowhatsapp.png">
+                        <a href="https://wa.link/vnc5ke">+57 317-507-5148</a><br>
+                        <img src="../Imagenes/Logos/Logoinstagram.png">
+                        <a href="https://www.instagram.com/sangriasdondejose_ibg/">sangriasdondejose_ibg</a>
+                        <br></br>
+                        <h3>Si deseas recoger tu pedido, encuentranos en:</h3>
+                        <img src="../Imagenes/Logos/logocasa.png">
+                        <label>Cra 3 #41-19, Ibagué, Tolima</label>
+                    </div>
+                </div>
+                <div class="columna3">
+                    <h3>Mensaje Clientes</h3>
+                    <p>En Sangrias Donde Jose amamos hacer parte de tus mejores momentos, por eso es importante para nosotros lo que tu opines</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerFooter2">
+            <div class="piedepagina">
+                @ 2023 Todos los Derechos Reservados
+            </div>
+            <div class="terminos">
+                Informacion Compañia | Privacion y Politica |Terminos y Condiciones.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
